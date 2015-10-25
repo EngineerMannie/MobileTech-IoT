@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First jQuery Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	
+	<script>
+		$(document).ready(function(){	
+			$("#1on").click(function(){
+				$.ajax("https://agent.electricimp.com/CfiiYXsoUJIh?led=1");
+			});
+			
+			$("#1off").click(function(){
+				$.ajax("https://agent.electricimp.com/CfiiYXsoUJIh?led=0");
+			});	
+			
+			$("#2on").click(function(){
+				$.ajax("https://agent.electricimp.com/CfiiYXsoUJIh?led=3");
+			});
+			
+			$("#2off").click(function(){
+				$.ajax("https://agent.electricimp.com/CfiiYXsoUJIh?led=2");
+			});
+			
+			
+		});
+		
+		
+	</script>
+	
+</head>
+<body>
+
+
+    <div data-role="page" id="pageone">
+ 
+        <div data-role="header">
+            <h1>Light Switch</h1>
+        </div><!-- /header -->
+ 
+        <div data-role="content" data-Swatch="b">
+            <p align="center">Lamp 1 controller is on pin 7.<br>
+			Lamp 2 controller is on pin 5.</p>
+			<div align="center">
+				<button id="1on" data-inline="true" data-theme="c">Lamp 1 ON</button>
+				<button id="1off" data-mini="true" data-inline="true">Lamp 1 OFF</button>
+				
+				<button id="2on" data-mini="true" data-inline="true" data-theme="b">Lamp 2 ON</button>
+				<button id="2off" data-mini="true" data-inline="true">Lamp 2 OFF</button>
+			</div>
+        </div><!-- /content -->
+ 
+        <div data-role="footer">
+            <h4>Footer One</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /page one-->
+    
+    
+    
+</body>
+</html>

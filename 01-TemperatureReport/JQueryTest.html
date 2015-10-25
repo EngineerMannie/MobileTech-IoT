@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First jQuery Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head>
+<body>
+
+
+    <div data-role="page" id="pageone">
+ 
+        <div data-role="header">
+        	<a href="#pagetwo" data-theme="b" data-icon="home">Page Two</a>
+            <h1>Page One</h1>
+            <a href="#pagethree" data-theme="e" data-icon="info">Page Three</a>
+        </div><!-- /header -->
+ 
+        <div data-role="content" data-Swatch="b">
+            <p>Hello world - From Page One</p>
+            <a href="#pagetwo">Go to Page Two</a>
+        </div><!-- /content -->
+ 
+        <div data-role="footer">
+            <h4>Footer One</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /page one-->
+    
+    
+    <div data-role="page" id="pagetwo" data-add-back-button="true">
+ 
+        <div data-role="header">
+            <div data-role="navbar">
+            	<ul>
+            		<li><a href="persistent_footer_#pageone" >Home</a></li>
+            		<li><a href="persistent_footer_#pagetwo" class="ui-btn-active">Page Two</a></li>
+            		<li><a href="persistent_footer_#pagethree" >Products</a></li>
+            	</ul>
+            </div>
+        </div><!-- /header -->
+ 
+        <div data-role="content">
+            <p>Hello world - From Page two</p>
+            <a href="#pagethree">Go to Page Three</a>
+        </div><!-- /content -->
+ 
+        <div data-role="footer">
+            <h4>Footer Two</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /page two-->
+    
+    <div data-role="page" id="pagethree" data-fullscreen="true">
+ 
+        <div data-role="header">
+            <h1>Page Three</h1>
+        </div><!-- /header -->
+ 
+        <div data-role="content">
+            <p>Our Products Include:</p>
+            <ul>
+            	<li>Alpha Series
+            		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id posuere lacus. 
+					Nulla ac sem ut eros dignissim interdum a et erat. Class aptent taciti sociosqu ad litora
+					torquent per conubia nostra, per inceptos himenaeos. In ac tellus est. Nunc consequat 
+					metus lobortis enim mattis nec convallis tellus pulvinar. Nullam diam ligula, dictum 
+					sed congue nec, dapibus id ipsum. Ut facilisis pretium dui, nec varius dui iaculis 
+					ultricies. Maecenas sollicitudin urna felis, non faucibus leo. Cum sociis natoque 
+					penatibus et magnis dis parturient montes, nascetur ridiculus mus. In id volutpat lectus.
+					Quisque mauris ipsum, vehicula id ornare aliquet, auctor volutpat dui. Sed euismod sem 
+					in arcu dapibus condimentum dictum nibh consequat.</p>
+            	</li>
+            	<li>Beta Series</li>
+            		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id posuere lacus. 
+					Nulla ac sem ut eros dignissim interdum a et erat. Class aptent taciti sociosqu ad litora
+					torquent per conubia nostra, per inceptos himenaeos. In ac tellus est. Nunc consequat 
+					metus lobortis enim mattis nec convallis tellus pulvinar. Nullam diam ligula, dictum 
+					sed congue nec, dapibus id ipsum. Ut facilisis pretium dui, nec varius dui iaculis 
+					ultricies. Maecenas sollicitudin urna felis, non faucibus leo. Cum sociis natoque 
+					penatibus et magnis dis parturient montes, nascetur ridiculus mus. In id volutpat lectus.
+					Quisque mauris ipsum, vehicula id ornare aliquet, auctor volutpat dui. Sed euismod sem 
+					in arcu dapibus condimentum dictum nibh consequat.</p>
+            	<li>Gamma Series</li>
+            		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id posuere lacus. 
+					Nulla ac sem ut eros dignissim interdum a et erat. Class aptent taciti sociosqu ad litora
+					torquent per conubia nostra, per inceptos himenaeos. In ac tellus est. Nunc consequat 
+					metus lobortis enim mattis nec convallis tellus pulvinar. Nullam diam ligula, dictum 
+					sed congue nec, dapibus id ipsum. Ut facilisis pretium dui, nec varius dui iaculis 
+					ultricies. Maecenas sollicitudin urna felis, non faucibus leo. Cum sociis natoque 
+					penatibus et magnis dis parturient montes, nascetur ridiculus mus. In id volutpat lectus.
+					Quisque mauris ipsum, vehicula id ornare aliquet, auctor volutpat dui. Sed euismod sem 
+					in arcu dapibus condimentum dictum nibh consequat.</p>
+            </ul>
+        </div><!-- /content -->
+ 
+        <div data-role="footer" class="ui-bar" data-position="fixed">
+            <a href="#pageone" data-icon="home">Home</a>
+            <a href="" data-rel="back" data-icon="back">Go Back..</a>
+        </div><!-- /footer -->
+ 
+    </div><!-- /page three-->
+    
+    
+</body>
+</html>
